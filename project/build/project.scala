@@ -11,7 +11,7 @@ class PortfolioProject(info: ProjectInfo) extends DefaultWebProject(info) with a
   val jersey = "com.sun.jersey" % "jersey-server" % "1.4"
   // Velocity
   val velocity = "org.apache.velocity" % "velocity" % "1.6.4"
-  val simpleVelocity = "bryanjswift" % "simple-velocity" % "0.3.0" from "http://github.com/downloads/bryanjswift/simple-velocity/simple-velocity_2.8.0-0.3.0.jar"
+  val simpleVelocity = "bryanjswift" % "simple-velocity" % "0.3.1" from "http://github.com/downloads/bryanjswift/simple-velocity/simple-velocity_2.8.0-0.3.1.jar"
   // Jetty
   val jetty6 = "org.mortbay.jetty" % "jetty" % "6.1.25"
 
