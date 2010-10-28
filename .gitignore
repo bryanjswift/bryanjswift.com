@@ -1,0 +1,13 @@
+.classpath
+.idea
+.project
+.session
+.settings
+*.tmproj
+project/boot
+project/lib_managed
+project/plugins/lib_managed
+project/plugins/project/build.properties
+src_managed
+tags
+target

@@ -1,0 +1,12 @@
+# Bryan J Swift's Portfolio #
+
+Project to handle the serving of my portfolio site.
+
+## Usage ##
+
+Create a fat jar file with the assembly plugin via `sbt assembly`. After packaging
+is complete execute the jar by `java -jar <jar file>`
+
+
+
+(c) 2010 Bryan J Swift
