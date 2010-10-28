@@ -1,0 +1,7 @@
+{
+  // General configuration stuff goes in here
+  "http": {
+    "port": 8080,
+    "host": "localhost"
+  }
+}

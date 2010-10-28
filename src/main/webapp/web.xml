@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <display-name>Bryan J Swift's Portfolio</display-name>
+  <!-- Jersey Servlet definition -->
+  <servlet>
+    <servlet-name>Jersey Servlet</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>com.bryanjswift.web.resources</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <!-- Map Jersey Servlet to a url-pattern -->
+  <servlet-mapping>
+    <servlet-name>Jersey Servlet</servlet-name>
+    <url-pattern>/d/*</url-pattern>
+  </servlet-mapping>
+  <!-- list of default paths -->
+  <welcome-file-list>
+    <welcome-file>index</welcome-file>
+  </welcome-file-list>
+</web-app>
+  
