@@ -15,6 +15,7 @@ class PortfolioProject(info: ProjectInfo) extends DefaultWebProject(info) with a
   // Jetty
   val jetty6 = "org.mortbay.jetty" % "jetty" % "6.1.25"
 
+  val jettyTest = "org.mortbay.jetty" % "jetty" % "6.1.25" % "test->default"
   // ScalaTest
   val scalaTest = "org.scalatest" % "scalatest" % "1.2" % "test->default"
 
