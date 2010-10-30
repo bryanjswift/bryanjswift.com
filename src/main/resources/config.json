@@ -7,5 +7,10 @@
   "http": {
     "port": 8080,
     "host": "localhost"
+  },
+  "templates": {
+    "/index": {
+      "html": "templates/index.vm"
+    }
   }
 }

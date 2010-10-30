@@ -16,6 +16,15 @@
     <servlet-name>Jersey Servlet</servlet-name>
     <url-pattern>/d/*</url-pattern>
   </servlet-mapping>
+  <!-- IndexServlet -->
+  <servlet>
+    <servlet-name>Index Servlet</servlet-name>
+    <servlet-class>com.bryanjswift.web.IndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Index Servlet</servlet-name>
+    <url-pattern>/index/*</url-pattern>
+  </servlet-mapping>
   <!-- list of default paths -->
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
