@@ -6,7 +6,7 @@ import org.mortbay.jetty.webapp.WebAppContext
 
 object PortfolioApp {
   val Config = new Configuration("src/main/resources/config.json")
-  def main(args:Array[String]) {
+  def main(args: Array[String]) {
     val server = new Server(Config("http.port").as[Int]);
     // create the context for the webapp
     val webapp = Config("webapp.path").or("src/main/webapp")
