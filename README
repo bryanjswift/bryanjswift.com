@@ -2,10 +2,14 @@
 
 Project to handle the serving of my portfolio site.
 
+Based on web-project.g8
+
 ## Usage ##
 
 Create a fat jar file with the assembly plugin via `sbt assembly`. After packaging
 is complete execute the jar by `java -jar <jar file>`
+
+Execute `sbt run`.
 
 
 
