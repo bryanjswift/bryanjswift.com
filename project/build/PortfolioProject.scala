@@ -16,6 +16,7 @@ class PortfolioProject(info: ProjectInfo) extends DefaultWebProject(info) with a
   val jetty6 = "org.mortbay.jetty" % "jetty" % "6.1.25"
   // MongoDB
   val liftMongo = "net.liftweb" %% "lift-mongodb" % "2.1"
+  val jodaTime = "joda-time" % "joda-time" % "1.6.2"
 
   val jettyTest = "org.mortbay.jetty" % "jetty" % "6.1.25" % "test->default"
   // ScalaTest
