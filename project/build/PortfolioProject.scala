@@ -23,7 +23,7 @@ class PortfolioProject(info: ProjectInfo) extends DefaultWebProject(info) with a
   val scalaTest = "org.scalatest" % "scalatest" % "1.2" % "test->default"
 
   // override looking for jars in ./lib
-  override def dependencyPath = "src" / "main" / "lib"
+  override def dependencyPath = sourceDirectoryName / mainDirectoryName / "lib"
   // override path to managed dependency cache
   override def managedDependencyPath = "project" / "lib_managed"
 }
