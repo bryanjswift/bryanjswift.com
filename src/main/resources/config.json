@@ -1,7 +1,8 @@
 {
   // General configuration stuff goes in here
   "webapp": {
-    "path": "src/main/webapp",
+    // descriptor has to be on the classpath, WEB-INF gets copied to the classpath
+    "descriptor": "WEB-INF/web.xml",
     "context": "/"
   },
   "http": {

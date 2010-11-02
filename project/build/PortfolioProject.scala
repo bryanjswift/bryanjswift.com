@@ -6,7 +6,7 @@ class PortfolioProject(info: ProjectInfo) extends DefaultWebProject(info) with a
   val codaRepo = "Coda Hale's Repository" at "http://repo.codahale.com/"
 
   // Fig - for configuration
-  val fig = "com.codahale" %% "fig" % "1.0.5"
+  val fig = "com.codahale" %% "fig" % "1.0.6" from "http://github.com/downloads/bryanjswift/fig/fig_2.8.0-1.0.6.jar"
   // Jersey
   val jersey = "com.sun.jersey" % "jersey-server" % "1.4"
   // Velocity
@@ -26,4 +26,6 @@ class PortfolioProject(info: ProjectInfo) extends DefaultWebProject(info) with a
   override def dependencyPath = sourceDirectoryName / mainDirectoryName / "lib"
   // override path to managed dependency cache
   override def managedDependencyPath = "project" / "lib_managed"
+  // include WEB-INF files on the resources classpath
+  override def mainResources = super.mainResources +++ webappResources.filter(_.relativePath.startsWith("WEB-INF"))
 }
